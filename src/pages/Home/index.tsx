@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
+import Feed from "../../components/Feed"
 import { getFeedListRequest } from "../../store/modules/feed/actions"
 import { IFeedState } from "../../store/modules/feed/types"
 import { IState } from "../../store/types"
@@ -15,12 +16,10 @@ const Home = () => {
     dispatch(getFeedListRequest())
   }, [])
 
-  console.log(items)
-
   return (
     <Base>
       <S.Container>
-        {loading ? <p>Carregando...</p> : <p>Carregou</p>}
+        {loading && !error ? <p>Carregando...</p> : <Feed items={[...items, ...items, ...items, ...items, ...items, ...items, ...items]}/>}
       </S.Container>
     </Base>
   )
