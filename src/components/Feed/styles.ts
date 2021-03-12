@@ -16,6 +16,7 @@ export const Wrapper = styled.ul`
 
 export const ListItem = styled.li<ListItemProps>`
   ${({ isFull }) => css`
+    position: relative;
     ${isFull && css`
       grid-column: 2 / 4;
       grid-row: span 2;
@@ -23,5 +24,3 @@ export const ListItem = styled.li<ListItemProps>`
   `}
 `
 
-export const Image = styled.img`
-`

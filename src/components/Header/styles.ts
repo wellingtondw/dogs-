@@ -7,6 +7,7 @@ export const Header = styled.header`
   top: 0;
   box-shadow: 0px 1px 1px rgb(0 0 0 / 10%);
   background: #fff;
+  z-index: 10;
 `
 
 export const Nav = styled.nav`

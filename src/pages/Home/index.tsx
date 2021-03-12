@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <Base>
       <S.Container>
-        {loading && !error ? <p>Carregando...</p> : <Feed items={[...items, ...items, ...items, ...items, ...items, ...items, ...items]}/>}
+        <Feed items={[...items, ...items, ...items, ...items, ...items, ...items, ...items]} loading={loading}/>
       </S.Container>
     </Base>
   )
