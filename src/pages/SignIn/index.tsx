@@ -1,5 +1,6 @@
 import Container from "../../components/Container"
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 const SignIn = () => {
   return (
@@ -8,6 +9,7 @@ const SignIn = () => {
       <Container>
         Conteúdo
       </Container>
+      <Footer />
     </>
   )
 }
