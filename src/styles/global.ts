@@ -21,6 +21,7 @@ export default createGlobalStyle`
   body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
+    padding-top: 6.4rem;
   }
 
   h1,
@@ -50,6 +51,7 @@ export default createGlobalStyle`
   }
 
   a {
+    color: #333;
     text-decoration: none;
   }
 `

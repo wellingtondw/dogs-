@@ -1,11 +1,19 @@
-import {Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux'
+
+import GlobalStyle from './styles/global'
+
+import Routes from './routes';
 import store from './store';
 
 function App() {
   return (
-    <Provider store={store}>
-    <h1>Hello World</h1>
-    </Provider>
+    <Router>
+      <Provider store={store}>
+       <Routes />
+       <GlobalStyle />
+      </Provider>
+    </Router>
   );
 }
 
