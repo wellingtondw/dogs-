@@ -14,7 +14,7 @@ const skeletonAnimation = keyframes`
 `
 
 export const Skeleton = styled.div`
-  width: 100%;
+  grid-area: 1/1;
   height: 100%;
   border-radius: 8px;
   animation: ${skeletonAnimation} 1.5s ease infinite;
