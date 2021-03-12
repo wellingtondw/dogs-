@@ -1,16 +1,13 @@
 import Container from "../../components/Container"
-import Header from "../../components/Header"
-import Footer from "../../components/Footer"
+import Base from "../../templates/Base"
 
 const SignIn = () => {
   return (
-    <>
-      <Header />
+    <Base>
       <Container>
         Conteúdo
       </Container>
-      <Footer />
-    </>
+    </Base>
   )
 }
 
