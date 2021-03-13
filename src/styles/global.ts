@@ -22,7 +22,6 @@ export default createGlobalStyle`
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     position: relative;
-    min-height: 100vh;
   }
 
   h1,

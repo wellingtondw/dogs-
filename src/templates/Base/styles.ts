@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Wrapper = styled.div`
-  padding: 8rem 0 11.6rem 0;
+import { BaseProps } from './'
+
+export const Wrapper = styled.div<Pick<BaseProps, 'hasPadding'>>`
+  ${({ hasPadding }) => css`
+    min-height: 100vh;
+    ${hasPadding && css`
+      padding: 8rem 0 11.6rem 0;
+    `}
+  `}
 `

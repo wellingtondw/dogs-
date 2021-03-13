@@ -1,13 +1,10 @@
-import Container from "../../components/Container"
-import Base from "../../templates/Base"
+import Auth from "../../templates/Auth"
 
 const SignIn = () => {
   return (
-    <Base>
-      <Container>
-        Conteúdo
-      </Container>
-    </Base>
+    <Auth>
+      <p>Aqui</p>
+    </Auth>
   )
 }
 
