@@ -4,9 +4,9 @@ type HeadingProps = {
   children: React.ReactNode
 }
 
-const Heading = ({children}: HeadingProps) => {
+const Heading = ({children, ...props}: HeadingProps) => {
   return (
-    <S.Title>
+    <S.Title {...props}>
       {children}
     </S.Title>
   )
