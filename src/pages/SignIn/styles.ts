@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 import { Wrapper as InputWrapper } from '../../components/Input/styles'
 
@@ -6,6 +7,12 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   margin-top: 10rem;
+
+  ${media.lessThan('medium')`
+    margin-top: 4rem;
+    justify-content: center;
+    padding: 0 1.6rem 11.6rem 1.6rem;
+  `}
 `
 
 export const Section = styled.section`
